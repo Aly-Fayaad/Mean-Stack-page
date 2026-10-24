@@ -9,7 +9,7 @@ The page recreates the supplied reference design: a slim white header, a two-col
 - Angular 21 (standalone components, no Router)
 - TypeScript
 - Plain CSS (component styles + global reset)
-- No backend, database, forms, authentication or third-party UI libraries
+- No database, forms, authentication or third-party UI libraries
 
 ## Getting started
 
@@ -62,13 +62,3 @@ src/
 
 Angular 21 serves files from `public/` at the application root, so the illustration is referenced as `images/hero-illustration.svg`.
 
-## Design notes
-
-- Desktop: two-column hero, four feature cards in one row.
-- Tablet (≤ 900 px): stacked, centered hero and a two-column card grid.
-- Mobile (≤ 640 px): compact two-row header, stacked hero, single-column cards.
-- Visible keyboard focus, meaningful image alt text and reduced-motion support are included.
-- The Plus Jakarta Sans font is self-hosted to avoid runtime network requests.
-- Colors are defined in `src/styles.css`; page layout and breakpoints live in `src/app/app.css`.
-
-There is no application state, data fetching or navigation beyond in-page section anchors.
